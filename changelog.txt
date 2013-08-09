@@ -1,0 +1,13 @@
+Changelog for AnimalProtect by CubieX (forked from damo1995)
+------------------------------------------------------------
+
+V.1.5.1b
+- First overhauled version by CubieX
+- build against CB 1.6.2-R0.1 (b2838)
+- modified mount riding rules to properly protect mounts from theft
+- modified config
+- modified plugin.yml (added command alias 'ap')
+- some code cleanup
+- removed Metrics
+- added 'version' command
+- changed JRE back to 1.6 (Java 6)

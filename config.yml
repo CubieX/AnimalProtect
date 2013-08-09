@@ -1,7 +1,6 @@
-#Default Animal Protect Config Version 3.3.3
+#Default Animal Protect Config
 notify: true
-notify-interval: 10
-notify-outdated: true
+shear-protect: true
 debug: false
 protect-from-player:
      - CHICKEN
@@ -13,5 +12,12 @@ protect-from-player:
      - WOLF
      - IRON_GOLOM
      - SNOWMAN
+     - HORSE
 protect-from-monsters:
      - VILLAGER
+NoDamagePermMsg: Du kannst hier keine Tiere angreifen!
+NoRideBecauseNoBuildPermMsg: Du darfst in diesem Gebiet kein Reittier benutzen!
+NoRideBecauseNotOwnerMsg: Du hast keine Erlaubnis fuer dieses Reittier!
+MountOwnerMsg: Dieses Reittier gehoert
+CommandFail: Du hast keine Rechte um das zu tun!
+AdminNotification: hat versucht ein geschuetztes Tier zu toeten.
