@@ -27,7 +27,7 @@ public class CommandHandler implements CommandExecutor
                return true;
             }
 
-            if (((args[0].equalsIgnoreCase("reload")) && (sender.isOp())) || (sender.hasPermission("animalprotect.admin")))
+            if (args[0].equalsIgnoreCase("reload") && (sender.isOp() || (sender.hasPermission("animalprotect.admin"))))
             {
                this.plugin.reloadConfig();
 
@@ -35,16 +35,21 @@ public class CommandHandler implements CommandExecutor
                sender.sendMessage(this.plugin.success + "Configuration Reloaded!");
                return true;
             }
-
-            if (((args[0].equalsIgnoreCase("list")) && (args[1].equalsIgnoreCase("player")) && (sender.isOp())) || (sender.hasPermission("animalprotect.list"))) {
+         }
+         else if (args.length == 2)
+         {
+            if (args[0].equalsIgnoreCase("list") && args[1].equalsIgnoreCase("player") && (sender.isOp() || sender.hasPermission("animalprotect.list")))
+            {
                List<String> pfp = this.plugin.getConfig().getStringList("protect-from-player");
                sender.sendMessage(this.plugin.success + "The following are protected from players");
-               for (String i : pfp) {
+               for (String i : pfp)
+               {
                   sender.sendMessage(i);
                }
             }
 
-            if (((args[0].equalsIgnoreCase("list")) && (args[1].equalsIgnoreCase("mobs")) && (sender.isOp())) || (sender.hasPermission("animalprotect.list"))) {
+            if (args[0].equalsIgnoreCase("list") && args[1].equalsIgnoreCase("mobs") && (sender.isOp() || sender.hasPermission("animalprotect.list")))
+            {
                List<String> pfp = this.plugin.getConfig().getStringList("protect-from-monsters");
                sender.sendMessage(this.plugin.success + "The following are protected from mobs");
                for (String i : pfp)

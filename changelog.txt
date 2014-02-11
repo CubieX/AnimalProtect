@@ -1,6 +1,10 @@
 Changelog for AnimalProtect by CubieX (forked from damo1995)
 ------------------------------------------------------------
 
+V.1.5.1c
+- fixed command handler structure
+- build against CB 1.7.2
+
 V.1.5.1b
 - First overhauled version by CubieX
 - build against CB 1.6.2-R0.1 (b2838)

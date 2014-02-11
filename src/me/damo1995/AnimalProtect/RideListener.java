@@ -31,7 +31,7 @@ public class RideListener implements Listener
       String errorMsg = "";
 
       if (clickedEntity.getType() == EntityType.HORSE)
-      {         
+      {
          Horse mount = (Horse) clickedEntity;
 
          List<String> protect = plugin.getConfig().getStringList("protect-from-player");
